@@ -14,7 +14,7 @@ const baseURL = publicRuntimeConfig.CLOUDFLARE_WORKER_BASE_URL;
 
 export default function Shorten() {
   const [longUrl, setLongUrl] = useState("");
-  const [shortUrlLength, setShortUrlLength] = useState(3);
+  const [shortUrlLength, setShortUrlLength] = useState(6);
   const [expirationTime, setExpirationTime] = useState(0);
   const [requirePassword, setRequirePassword] = useState(false);
   const [password, setPassword] = useState("");
